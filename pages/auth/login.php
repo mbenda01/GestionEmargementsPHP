@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Fonction de vérification du mot de passe haché
+//vérifier si un mot de passe fourni correspond à un mot de passe haché en utilisant l'algorithme de hachage SHA-256 avec un "sel" (secret_salt).
 function customPasswordVerify($password, $hashedPassword) {
     return hash('sha256', $password . 'secret_salt') === $hashedPassword;
 }

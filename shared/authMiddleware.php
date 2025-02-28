@@ -1,5 +1,7 @@
 <?php
 error_reporting(E_ALL);
+
+//pour activer l'affichage des erreurs directement sur la page web pendant l'exécution du script.
 ini_set('display_errors', 1);
 
 if (session_status() === PHP_SESSION_NONE) {
